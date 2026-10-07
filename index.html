@@ -1,0 +1,253 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Eprom, social media admin for big communities on Instagram, Telegram and YouTube."><meta property="og:title" content="Eprom, Social Media Admin"><meta property="og:description" content="I run social media for big communities."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23f2ebdd%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2738%27 font-weight=%27700%27 text-anchor=%27middle%27 font-family=%27sans-serif%27%3EE%3C/text%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"><title>Eprom Social Media Admin</title>
+<style>
+:root{color-scheme:dark;--bg:#000;--card:#111;--line:#262626;--tx:#fff;--mu:#a8a8a8;--ac:#f2ebdd;--acx:#000}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#000;color:var(--tx);font:18px/1.6 'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.15;letter-spacing:-.02em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,5vw,40px);font-weight:800;margin-bottom:12px}
+.sub{color:var(--mu);margin-bottom:36px;font-size:19px}
+.btn{display:inline-block;background:var(--ac);color:var(--acx);font-weight:700;text-decoration:none;padding:15px 26px;border-radius:999px;border:0;font:700 17px 'Hanken Grotesk',sans-serif;cursor:pointer}
+.btn.ghost{background:none;color:#fff;border:1px solid #444}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+header{position:sticky;top:0;z-index:5;background:rgba(0,0,0,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+header b{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px}
+header .btn{padding:10px 20px;font-size:16px}
+.hero{padding:88px 0 72px;border:0}
+.hero h1{font-size:clamp(38px,8vw,72px);font-weight:800;max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--ac)}
+.hero p{font-size:clamp(19px,3vw,23px);color:var(--mu);margin:22px 0 32px;max-width:30em}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.num{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 20px}
+.num strong{display:block;font:800 clamp(34px,5vw,48px)/1 'Plus Jakarta Sans',sans-serif;color:var(--ac)}
+.num span{display:block;margin-top:10px;color:var(--mu);font-size:16px;line-height:1.4}
+.note{color:#777;font-size:14px;margin-top:14px}
+.do{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;list-style:none}
+.do li{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.do h3{font-size:24px;margin-bottom:6px}
+.do p{color:var(--mu)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.shot{display:block;width:100%;border:0;background:none;padding:0;cursor:zoom-in;color:inherit}
+.card .shot{aspect-ratio:1/1.1;overflow:hidden}
+.card .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+.yt img{object-position:center!important}
+.card .meta{padding:16px}
+.card .meta b{display:block;font:800 20px 'Plus Jakarta Sans',sans-serif}
+.card .meta span{color:var(--mu);font-size:15px}
+.card .meta a{color:var(--ac);font-size:15px;display:block;margin-top:4px}
+.more{margin-top:22px;color:var(--mu)}
+.more a{color:#fff}
+.ex{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;margin-bottom:18px}
+.ex h3{font-size:26px;margin-bottom:12px}
+.ex p{color:var(--mu);margin-bottom:8px}
+.ex p b{color:#fff}
+.likes{display:grid;gap:10px}
+.likes figure{position:relative}
+.likes img{border-radius:12px}
+.likes figcaption{position:absolute;right:8px;top:8px;background:var(--ac);color:#000;font-weight:800;font-size:14px;padding:3px 10px;border-radius:99px}
+.likes .l2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.two figure{font-size:14px;color:var(--mu)}
+.two img{border-radius:12px;margin-bottom:6px}
+.designs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.designs img{border-radius:16px;width:100%}
+.about{display:grid;grid-template-columns:320px 1fr;gap:40px;align-items:center}
+.about img{border-radius:24px;width:100%}
+.about p{color:#d0d0d0;margin-bottom:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.steps li:before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ac);color:#000;font:800 20px 'Plus Jakarta Sans',sans-serif;margin-bottom:14px}
+.steps h3{font-size:22px;margin-bottom:6px}
+.steps p{color:var(--mu)}
+.contact{text-align:center}
+.contact h2{font-size:clamp(32px,6vw,52px)}
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px;text-align:left}
+.way{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:6px}
+.way .k{color:var(--mu);font-size:15px}
+.way .v{font:700 19px 'Plus Jakarta Sans',sans-serif;word-break:break-all}
+.way .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.way .btn{padding:11px 20px;font-size:16px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#777;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between}
+dialog{border:0;background:none;max-width:96vw;max-height:94vh;padding:0;overflow:visible}
+dialog::backdrop{background:rgba(0,0,0,.92)}
+dialog img{max-height:90vh;max-width:96vw;border-radius:12px;margin:auto}
+dialog form{position:absolute;top:-14px;right:-6px}
+dialog button{width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:#000;font-size:26px;cursor:pointer}
+@media(max-width:860px){.nums,.cards{grid-template-columns:repeat(2,1fr)}.ex,.about{grid-template-columns:1fr}.about img{max-width:280px}.steps,.ways{grid-template-columns:1fr}.designs{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:560px){body{font-size:17px}section{padding:56px 0}.hero{padding:56px 0 48px}.do{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr;gap:10px}.ex{padding:20px}.num{padding:20px 16px}}
+
+.hero h1{max-width:16ch}
+.hero h1 em{color:#fff;border-bottom:4px solid var(--ac)}
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0}
+.strip .nums{gap:0}
+.strip .num{background:none;border:0;border-radius:0;border-left:1px solid var(--line);padding:34px 22px}
+.strip .num:first-child{border-left:0;padding-left:0}
+.num strong{color:#fff}
+.why{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;list-style:none}
+.why li{border:1px solid var(--line);border-radius:20px;padding:26px;background:var(--card)}
+.why h3{font-size:22px;margin-bottom:6px}
+.why p{color:var(--mu)}
+.why li:before{content:"✓";display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--ac);color:#000;font-weight:800;margin-bottom:14px}
+.big15{font:800 clamp(64px,12vw,120px)/1 'Plus Jakarta Sans',sans-serif;letter-spacing:-.04em;margin:6px 0 10px}
+.likes .l4{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.likes figcaption{background:var(--ac)}
+.cards.six{grid-template-columns:repeat(3,1fr)}
+.cards.six .card .shot{aspect-ratio:1/1}
+.label{display:inline-block;border:1px solid #444;border-radius:99px;padding:4px 14px;font-size:14px;color:var(--mu);margin-bottom:14px}
+@media(max-width:860px){.strip .num{border-left:0;border-top:1px solid var(--line);padding:22px 4px}.strip .num:first-child{border-top:0}.strip .nums{grid-template-columns:1fr 1fr}.why{grid-template-columns:1fr}.cards.six{grid-template-columns:1fr 1fr}}
+</style>
+</head><body>
+<header id="top"><div class="wrap"><b>Eprom</b><a class="btn" href="#contact">Contact me</a></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<h1>I run social media for <em>100,000+</em> people.</h1>
+<p>I help run Instagram, Telegram and YouTube for SGB VA, a company in Singapore. I post, I reply, I grow the page. Now I can do it for you.</p>
+<div class="row"><a class="btn" href="#contact">Work with me</a><a class="btn ghost" href="#proof">See my work</a></div>
+</div></section>
+
+<section class="strip"><div class="wrap">
+<div class="nums">
+<div class="num"><strong>7.5M</strong><span>views in 30 days on @sgb_va</span></div>
+<div class="num"><strong>3.4M</strong><span>views in 30 days on @tanyagromenko</span></div>
+<div class="num"><strong>257K</strong><span>followers on @sgb_va</span></div>
+<div class="num"><strong>143K</strong><span>members in Telegram</span></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Why you can trust me</h2>
+<p class="sub">Short and true.</p>
+<ul class="why">
+<li><h3>I do this every day</h3><p>I work on big accounts for a real company, not just practice pages.</p></li>
+<li><h3>I was chosen</h3><p>I came 5th out of 1,550+ students in the SGB VA course. They picked me for the team.</p></li>
+<li><h3>I talk to real people</h3><p>I answer a community of 143K in Telegram, in English and Bahasa Indonesia.</p></li>
+<li><h3>I make things people like</h3><p>My brand comments got 30K+ likes. I also design the posts.</p></li>
+</ul>
+</div></section>
+
+<section id="proof"><div class="wrap">
+<h2>My work</h2>
+<p class="sub">Real screenshots. Tap a picture to see it big.</p>
+
+<div class="ex">
+<div>
+<span class="label">Instagram · Get noticed</span>
+<div class="big15">30K+</div>
+<h3>likes on my brand comments</h3>
+<p>I write comments for @sgb_va on popular posts. New people see them and visit the page.</p>
+<p><b>Best one:</b> 15.9K likes.</p>
+</div>
+<div class="likes">
+<figure><button class="shot" type="button" data-zoom><img src="img/comment-1.webp" width="738" height="330" alt="Brand comment with 15.9K likes" loading="lazy"></button><figcaption>15.9K</figcaption></figure>
+<div class="l4">
+<figure><button class="shot" type="button" data-zoom><img src="img/comment-3.webp" width="738" height="330" alt="Brand comment with 5,120 likes" loading="lazy"></button><figcaption>5.1K</figcaption></figure>
+<figure><button class="shot" type="button" data-zoom><img src="img/comment-2.webp" width="738" height="330" alt="Brand comment with 5,066 likes" loading="lazy"></button><figcaption>5K</figcaption></figure>
+<figure><button class="shot" type="button" data-zoom><img src="img/comment-5.webp" width="738" height="370" alt="Brand comment with 4,094 likes" loading="lazy"></button><figcaption>4K</figcaption></figure>
+<figure><button class="shot" type="button" data-zoom><img src="img/comment-4.webp" width="738" height="370" alt="Brand comment with 603 likes" loading="lazy"></button><figcaption>603</figcaption></figure>
+</div>
+</div>
+</div>
+
+<div class="ex">
+<div>
+<span class="label">Telegram · Keep people happy</span>
+<h3>I turn a complaint into a kind answer</h3>
+<p><b>Problem:</b> a member said our talk did not teach what they wanted.</p>
+<p><b>What I did:</b> I said thank you, explained what comes next, and told them about a new class.</p>
+<p><b>Result:</b> other members reacted with happy emojis.</p>
+</div>
+<div class="two">
+<figure><button class="shot" type="button" data-zoom><img src="img/tg-comment-1.webp" width="968" height="942" alt="Member comment in Telegram, name hidden" loading="lazy"></button>Their comment</figure>
+<figure><button class="shot" type="button" data-zoom><img src="img/tg-response.webp" width="950" height="722" alt="My reply in Telegram, name hidden" loading="lazy"></button>My reply</figure>
+</div>
+</div>
+
+<h3 style="font-size:26px;margin:48px 0 6px">Posts I designed</h3>
+<p class="sub" style="margin-bottom:18px">Clean, bold and easy to read.</p>
+<div class="designs">
+<button class="shot" type="button" data-zoom><img src="img/edit-email-marketing.webp" width="1080" height="1080" alt="Post design: What is email marketing" loading="lazy"></button>
+<button class="shot" type="button" data-zoom><img src="img/edit-virtual-assistant.webp" width="1080" height="1080" alt="Post design: Who are virtual assistants" loading="lazy"></button>
+<button class="shot" type="button" data-zoom><img src="img/edit-what-made-me.webp" width="1080" height="1080" alt="Post design: What made me become a virtual assistant" loading="lazy"></button>
+</div>
+
+<h3 style="font-size:26px;margin:48px 0 6px">Accounts I help run</h3>
+<p class="sub" style="margin-bottom:18px">Open the links to see them live.</p>
+<div class="cards six">
+<figure class="card"><button class="shot" type="button" data-zoom><img src="img/ig-sgb_va.webp" width="900" height="1092" alt="Instagram profile of sgb_va, 257K followers" loading="lazy"></button><figcaption class="meta"><b>257K</b><span>Instagram followers</span><a href="https://www.instagram.com/sgb_va/" target="_blank" rel="noopener">@sgb_va</a></figcaption></figure>
+<figure class="card"><button class="shot" type="button" data-zoom><img src="img/ig-tanyagromenko.webp" width="900" height="1092" alt="Instagram profile of tanyagromenko, 143K followers" loading="lazy"></button><figcaption class="meta"><b>143K</b><span>Instagram followers</span><a href="https://www.instagram.com/tanyagromenko/" target="_blank" rel="noopener">@tanyagromenko</a></figcaption></figure>
+<figure class="card"><button class="shot" type="button" data-zoom><img src="img/telegram-channel.webp" width="900" height="1677" alt="Telegram channel with 143,189 subscribers" loading="lazy"></button><figcaption class="meta"><b>143K</b><span>Telegram members</span><a href="https://t.me/sgbva" target="_blank" rel="noopener">t.me/sgbva</a></figcaption></figure>
+<figure class="card"><button class="shot yt" type="button" data-zoom><img src="img/youtube-studio.webp" width="1400" height="776" alt="YouTube Studio with 15,618 subscribers" loading="lazy"></button><figcaption class="meta"><b>15.6K</b><span>YouTube subscribers</span></figcaption></figure>
+<figure class="card"><button class="shot" type="button" data-zoom><img src="img/ig-sgbva_alumnihub.webp" width="738" height="1600" alt="Instagram profile of sgbva_alumnihub" loading="lazy"></button><figcaption class="meta"><b>9.9K</b><span>Instagram followers</span><a href="https://www.instagram.com/sgbva_alumnihub/" target="_blank" rel="noopener">@sgbva_alumnihub</a></figcaption></figure>
+<figure class="card"><button class="shot" type="button" data-zoom><img src="img/ig-sgbva_my.webp" width="738" height="1600" alt="Instagram profile of sgbva_my" loading="lazy"></button><figcaption class="meta"><b>1.8K</b><span>Instagram followers</span><a href="https://www.instagram.com/sgbva_my/" target="_blank" rel="noopener">@sgbva_my</a></figcaption></figure>
+</div>
+<p class="more">Also: <a href="https://x.com/sgb_va" target="_blank" rel="noopener">X (SGB VA)</a>, <a href="https://x.com/tatianagromenko" target="_blank" rel="noopener">X (Tatiana)</a> and <a href="https://www.threads.net/@tanyagromenko" target="_blank" rel="noopener">Threads</a>.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>What I can do for you</h2>
+<p class="sub">Simple things that keep your page alive.</p>
+<ul class="do">
+<li><h3>Post for you</h3><p>Posts and designs go out on time.</p></li>
+<li><h3>Talk to your fans</h3><p>I answer comments and messages in a kind and clear way.</p></li>
+<li><h3>Help people find you</h3><p>I write comments that bring new people to your page.</p></li>
+<li><h3>Take care of channels</h3><p>Instagram, Telegram, YouTube, X and Threads.</p></li>
+</ul>
+</div></section>
+
+<section><div class="wrap about">
+<img src="img/profile.webp" width="960" height="1280" alt="Portrait of Eprom" loading="lazy">
+<div>
+<h2>Hi, I'm Eprom.</h2>
+<p>I live in Indonesia and work online for SGB VA, a company in Singapore.</p>
+<p>I learned in their course and finished 5th out of 1,550+ students. Later they chose me as their social media admin.</p>
+<p>I speak English and Bahasa Indonesia, and I keep learning digital marketing.</p>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>How we start</h2>
+<p class="sub">Three easy steps.</p>
+<ol class="steps">
+<li><h3>Say hello</h3><p>Tell me about your accounts.</p></li>
+<li><h3>Pick the tasks</h3><p>We choose what I do for you.</p></li>
+<li><h3>I start work</h3><p>I take care of it. You relax.</p></li>
+</ol>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2>Ready to grow your page?</h2>
+<p class="sub" style="margin:0">Send me a message. I reply fast.</p>
+<div class="ways">
+<div class="way"><span class="k">Telegram</span><span class="v">@Rriijjaall</span><div class="row"><a class="btn" href="https://t.me/Rriijjaall" target="_blank" rel="noopener">Open chat</a></div></div>
+<div class="way"><span class="k">WhatsApp</span><span class="v">+62 822-2422-2043</span><div class="row"><a class="btn" href="https://wa.me/6282224222043" target="_blank" rel="noopener">Open chat</a><button class="btn ghost" type="button" data-copy="+62 822-2422-2043">Copy</button></div></div>
+<div class="way"><span class="k">Email</span><span class="v">epromrijal10@gmail.com</span><div class="row"><a class="btn" href="mailto:epromrijal10@gmail.com">Send email</a><button class="btn ghost" type="button" data-copy="epromrijal10@gmail.com">Copy</button></div></div>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© Eprom Rijal Arrohman</span><a href="#top">Back to top</a></div></footer>
+
+<dialog id="viewer" aria-label="Big picture"><img id="viewer-img" alt=""><form method="dialog"><button aria-label="Close">×</button></form></dialog>
+<script>
+(function(){
+var d=document.getElementById('viewer'),vi=document.getElementById('viewer-img');
+document.addEventListener('click',function(e){
+var z=e.target.closest('[data-zoom]');
+if(z){var i=z.querySelector('img');vi.src=i.currentSrc||i.src;vi.alt=i.alt;if(d.showModal)d.showModal();return}
+if(e.target===d||e.target===vi){d.close();return}
+var c=e.target.closest('[data-copy]');
+if(c){var t=c.getAttribute('data-copy'),o=c.textContent;
+var ok=function(){c.textContent='Copied!';setTimeout(function(){c.textContent=o},1500)};
+try{navigator.clipboard.writeText(t).then(ok,function(){fb(t);ok()})}catch(x){fb(t);ok()}}
+});
+function fb(t){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(x){}a.remove()}
+})();
+</script>
+</body></html>
