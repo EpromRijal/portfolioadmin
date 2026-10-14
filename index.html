@@ -110,6 +110,18 @@ dialog button{width:44px;height:44px;border-radius:50%;border:0;background:#fff;
 .say .tag{display:inline-block;background:var(--ac);color:#000;font-weight:800;font-size:14px;padding:4px 14px;border-radius:99px;margin-top:18px}
 .say .shot img{border-radius:16px;width:100%}
 @media(max-width:860px){.say{grid-template-columns:1fr;padding:20px}}
+
+.tg{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px;margin-bottom:18px}
+.tg h3{font-size:30px;margin:6px 0 12px}.tg>p{color:var(--mu)}.tg p b{color:#fff}
+.tgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;margin-top:22px;align-items:start}
+.tcol figure{margin-bottom:12px}.tcol .shot img{border-radius:14px;width:100%;height:auto}
+.tt{font:800 15px 'Plus Jakarta Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px;color:var(--mu)}
+.tcol.good{position:sticky;top:84px}.tcol.good .tt{color:var(--ac)}
+.glow{padding:8px;border-radius:22px;background:var(--ac);box-shadow:0 0 0 1px var(--ac),0 0 60px rgba(242,235,221,.28)}
+.glow .shot img{border-radius:15px}
+.pts{list-style:none;margin:16px 0 8px}.pts li{padding:10px 14px;margin-bottom:8px;border-left:4px solid var(--ac);background:rgba(242,235,221,.09);border-radius:0 12px 12px 0}.pts b{color:var(--ac)}
+.res{color:var(--mu)}
+@media(max-width:860px){.tgrid{grid-template-columns:1fr}.tcol.good{position:static}.tg{padding:20px}.tg h3{font-size:26px}}
 </style>
 </head><body>
 <header id="top"><div class="wrap"><b>Eprom</b><a class="btn" href="#contact">Contact me</a></div></header>
@@ -176,17 +188,27 @@ dialog button{width:44px;height:44px;border-radius:50%;border:0;background:#fff;
 </div>
 </div>
 
-<div class="ex">
-<div>
+<div class="tg">
 <span class="label">Telegram · Keep people happy</span>
 <h3>I turn a complaint into a kind answer</h3>
-<p><b>Problem:</b> a member said our talk did not teach what they wanted.</p>
-<p><b>What I did:</b> I said thank you, explained what comes next, and told them about a new class.</p>
-<p><b>Result:</b> other members reacted with happy emojis.</p>
+<p><b>Problem:</b> members said our talk did not teach what they wanted.</p>
+<div class="tgrid">
+<div class="tcol"><div class="tt bad">What people said</div>
+<figure><button class="shot" type="button" data-zoom><img src="img/tg-comment-1.webp" width="968" height="942" alt="Member complaint 1 in Telegram" loading="lazy"></button></figure>
+<figure><button class="shot" type="button" data-zoom><img src="img/tg-comment-2.webp" width="972" height="1202" alt="Member complaint 2 in Telegram" loading="lazy"></button></figure>
+<figure><button class="shot" type="button" data-zoom><img src="img/tg-comment-3.webp" width="982" height="1336" alt="Member complaints 3 and 4 in Telegram" loading="lazy"></button></figure>
 </div>
-<div class="two">
-<figure><button class="shot" type="button" data-zoom><img src="img/tg-comment-1.webp" width="968" height="942" alt="Member comment in Telegram, name hidden" loading="lazy"></button>Their comment</figure>
-<figure><button class="shot" type="button" data-zoom><img src="img/tg-response.webp" width="950" height="722" alt="My reply in Telegram, name hidden" loading="lazy"></button>My reply</figure>
+<div class="tcol good"><div class="tt">My kind reply ✦</div>
+<figure class="glow"><button class="shot" type="button" data-zoom><img src="img/tg-response.webp" width="950" height="722" alt="My friendly reply in Telegram" loading="lazy"></button></figure>
+<ul class="pts">
+<li><b>I said thank you</b> for the feedback.</li>
+<li><b>I showed respect</b> for their opinion.</li>
+<li><b>I stayed calm:</b> "relax, we have many talks."</li>
+<li><b>I gave a fix:</b> step-by-step classes and a hands-on masterclass.</li>
+<li><b>I invited them back</b> with a smile.</li>
+</ul>
+<p class="res"><b>Result:</b> other members reacted with happy emojis.</p>
+</div>
 </div>
 </div>
 
